@@ -6,6 +6,59 @@
     <title>Document</title>
   </head>
   <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- link css  -->
+        <link rel="stylesheet" href="style.css" />
+      </head>
+      <body>
+        <div class="total">
+          <div class="container">
+            <h3>
+              1/Cho danh sách const arr =[33,14,26,12,13,7,9,10,102, 205,
+              379,418,1]
+            </h3>
+            <h4 class="result" id="popup-result">
+              Đáp án: <span id="result"></span>
+            </h4>
+            <ul>
+              <li onclick="increase()">
+                Hãy sắp xếp theo thứ tự tăng dần<span> answer</span>
+              </li>
+              <li onclick="decrease()">
+                Hãy sắp xếp theo thứ tự giảm dần<span>answer</span>
+              </li>
+              <li onclick="findEven()">
+                Hãy tìm ra những số chia hết 2 và bỏ chúng vào một mảng mới (
+                sắp xếp theo thứ tự tăng dần) Ví dụ kết quả la newArr =
+                [2,4,6,8]<span>answer</span>
+              </li>
+              <li onclick="findOdd()">
+                Hãy tìm ra những số không chia hết cho 2 và bỏ chúng vào mảng
+                mới và sắp xếp theo thứ tự giảm dần. Ví dụ kết quả là newList =
+                [205, 105,99,13,1]<span>answer</span>
+              </li>
+              <li onclick="totalArray()">
+                Tính tổng của danh sách arr ở đề bài<span>answer</span>
+              </li>
+              <li onclick="bigNumb()">
+                Tìm số lớn nhất trong mảng ở đề bài<span>answer</span>
+              </li>
+              <li onclick="smallNumb()">
+                Tìm số bé nhất trong mảng ở đề bài<span>answer</span>
+              </li>
+              <li onclick="secondNumb()">
+                Tìm số lớn thứ 2 của mảng<span>answer</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </body>
+    </html>
     <script src="main.js"></script>
   </body>
 </html>

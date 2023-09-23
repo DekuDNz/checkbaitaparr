@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v546batch3-mynt-34-badgewatercolor_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=89288ef4b47127f7f34a5998b50e4470");
+}
+h4 {
+  border: 3px solid black;
+}
+.result {
+  width: 50%;
+  background-color: grey;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+.total {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 20px;
+      margin-top: 20px;
+      li {
+        width: 250px;
+        height: 250px;
+        border: 2px solid black;
+        font-weight: 800;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 100;
+        span {
+          position: absolute;
+          bottom: 1px;
+          left: 2px;
+          background-color: white;
+          display: block;
+          padding: 5px;
+          border-radius: 10px;
+          cursor: pointer;
+          border: 1px dotted black;
+        }
+      }
+    }
+  }
+}
+h3 {
+  margin-bottom: 20px;
+}
+
+span:hover {
+  color: red;
+}

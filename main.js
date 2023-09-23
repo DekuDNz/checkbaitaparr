@@ -1,3 +1,4 @@
+const result = document.querySelector("#result");
 // 1/Cho danh sách
 const arr = [33, 14, 26, 12, 13, 7, 9, 10, 102, 205, 379, 418, 1];
 
@@ -16,6 +17,7 @@ const increase = () => {
     return a - b;
   });
   console.log("new array ", increasing);
+  result.textContent = increasing;
 };
 
 increase();
@@ -25,6 +27,7 @@ const decrease = () => {
     return b - a;
   });
   console.log("new decreasing array ", decreasing);
+  result.textContent = decreasing;
 };
 decrease();
 
@@ -38,6 +41,7 @@ const findEven = () => {
     }
   });
   console.log("new array chia het cho 2", newArrayEven);
+  result.textContent = newArrayEven;
 };
 findEven();
 // d) hãy tìm ra những số không chia hết cho 2 và bỏ chúng vào mảng mới và sắp xếp theo thứ tự giảm dần.
@@ -51,6 +55,7 @@ const findOdd = () => {
     }
   });
   console.log("new array chia het cho 3", newArrayOdd);
+  result.textContent = newArrayOdd;
 };
 findOdd();
 // e) Tính tổng của danh sách arr ở đề bài
@@ -60,27 +65,36 @@ const totalArray = () => {
     sum = sum + item;
   });
   console.log("total array la :", sum);
+  result.textContent = sum;
 };
 totalArray();
 
 // f) Tìm số lớn nhất trong mảng ở đề bài
+const bigNumb = () => {
+  arr.sort((a, b) => {
+    return b - a;
+  });
+  const biggestNumb = arr[0];
+  console.log("so lon' nhat", biggestNumb);
+  result.textContent = biggestNumb;
+};
 
-arr.sort((a, b) => {
-  return b - a;
-});
-const biggestNumb = arr[0];
-console.log("so lon' nhat", biggestNumb);
 // g) tìm số bé nhất trong mảng ở đề bài
-
-arr.sort((a, b) => {
-  return a - b;
-});
-const smallestNumb = arr[0];
-console.log("so be' nhat", smallestNumb);
+const smallNumb = () => {
+  arr.sort((a, b) => {
+    return a - b;
+  });
+  const smallestNumb = arr[0];
+  console.log("so be' nhat", smallestNumb);
+  result.textContent = smallestNumb;
+};
 
 // h) tìm số lớn thứ 2 của mảng
-arr.sort((a, b) => {
-  return b - a;
-});
-const bigSecondNumb = arr[1];
-console.log("so lon' thu hai", bigSecondNumb);
+const secondNumb = () => {
+  arr.sort((a, b) => {
+    return b - a;
+  });
+  const bigSecondNumb = arr[1];
+  console.log("so lon' thu hai", bigSecondNumb);
+  result.textContent = bigSecondNumb;
+};
